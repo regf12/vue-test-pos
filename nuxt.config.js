@@ -9,7 +9,11 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: '//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,400italic|Material+Icons'
+      }
     ]
   },
 
@@ -19,7 +23,7 @@ module.exports = {
 
   axios: {
     baseURL: 'http://laravel-server.test/api'
-    /* baseURL: 'http://test-laravel-pos/api' */
+    /* baseURL: 'https://laravel-test-pos.herokuapp.com/api' */
   },
   auth: {
     strategies: {
@@ -53,6 +57,11 @@ module.exports = {
       }
     }
   },
-  css: ['./node_modules/bootstrap/dist/css/bootstrap.css'],
-  plugins: ['~plugins/bootstrap.js', './plugins/mixins/user.js']
+  css: [
+    './node_modules/bootstrap/dist/css/bootstrap.css',
+  ],
+  plugins: [
+    '~plugins/bootstrap.js',
+    './plugins/mixins/user.js'
+  ]
 }
