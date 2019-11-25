@@ -22,8 +22,8 @@ module.exports = {
   modules: ['@nuxtjs/auth', '@nuxtjs/axios'],
 
   axios: {
-    baseURL: 'http://laravel-server.test/api'
-    /* baseURL: 'https://laravel-test-pos.herokuapp.com/api' */
+    /* baseURL: 'http://laravel-server.test/api' */
+    baseURL: 'https://laravel-test-pos.herokuapp.com/api'
   },
   auth: {
     strategies: {
